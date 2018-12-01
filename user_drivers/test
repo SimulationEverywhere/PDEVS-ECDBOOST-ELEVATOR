@@ -1,0 +1,26 @@
+	if(!isStarted){
+		cout << "Would you start simulation ? (Y/N)" << endl;
+		char answer(0); //
+		cin >> answer; // collect answer
+		if(answer=='Y'){
+			isStarted=true;
+			v=-1;
+			return true;
+		}
+		else
+			isStarted=false;
+		return false;
+	}
+	else{
+		cout << "Would you stop simulation ? (Y/N)" << endl;
+		char answer(0); //
+		cin >> answer; // collect answer
+		if(answer=='Y'){
+			isStarted=false;
+			v=-2;
+			return true;
+		}
+		else
+			isStarted=true;
+		return false;
+	}
